@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <img src="./res/logo_inner_circe.png" alt="" class="innerCircle">
+        <img src="./res/logo_base.png" alt="" class="base">
+        <img src="./res/logo_outer_circle.png" alt="" class="outerCircle">
+    </div>
+    <div class="box left">
+        <img src="res/chat-2.png" alt="Your Image" />
+        <img src="res/chat-3.png" alt="Your Image" />
+        <h1>Management Team</h1>
+        <ol>
+            <li>Student Management Team</li>
+            <li>Club Management Team</li>
+            <li>Social Media Management Team</li>
+            <li>Monitoring Team</li>
+        </ol>
+    </div>
+    <div class="box front">
+        <img src="res/chat-2.png" alt="Your Image" />
+        <img src="res/chat-3.png" alt="Your Image" />
+        <h1>Management Team</h1>
+        <ol>
+            <li>Student Management Team</li>
+            <li>Club Management Team</li>
+            <li>Social Media Management Team</li>
+            <li>Monitoring Team</li>
+        </ol>
+    </div>
+    <div class="box right">
+        <img src="res/chat-2.png" alt="Your Image" />
+        <img src="res/chat-3.png" alt="Your Image" />
+        <h1>Management Team</h1>
+        <ol>
+            <li>Student Management Team</li>
+            <li>Club Management Team</li>
+            <li>Social Media Management Team</li>
+            <li>Monitoring Team</li>
+        </ol>
+    </div>
+    <div class="box back">
+        <img src="res/chat-2.png" alt="Your Image" />
+        <img src="res/chat-3.png" alt="Your Image" />
+        <h1>Management Team</h1>
+        <ol>
+            <li>Student Management Team</li>
+            <li>Club Management Team</li>
+            <li>Social Media Management Team</li>
+            <li>Monitoring Team</li>
+        </ol>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setInterval(function () {
+            var front = document.querySelector('.front');
+            var left = document.querySelector('.left');
+            var right = document.querySelector('.right');
+            var back = document.querySelector('.back');
+
+            front.classList.remove('front');
+            front.classList.add('left');
+
+            left.classList.remove('left');
+            left.classList.add('back');
+
+            right.classList.remove('right');
+            right.classList.add('front');
+
+            back.classList.remove('back');
+            back.classList.add('right');
+        }, 6000);
+    });
+</script>
+
+</html>
