@@ -21,7 +21,7 @@
     inset: 0;
     margin: auto;
     background: linear-gradient(90deg, rgba(12, 12, 12, 1), rgb(53, 65, 60), rgba(12, 12, 12, 1));
-    /* transform: translateY(0) rotateX(50deg) scale(1); */
+    transform: translateY(0) rotateX(50deg) scale(1);
     transition: all .3s ease;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .left {
-    transform: translateX(40vw) translateZ(0vh) translateY(0px) rotateY(60deg) rotateZ(340deg) rotateX(5deg) scale(1);
+    transform: translateX(40vw) translateZ(0) translateY(0px) rotateY(70deg) scale(1);
     top: calc(50vh - 150px);
     left: calc(50vw - 300px);
     z-index: -1;
@@ -42,14 +42,14 @@
 
 .right {
     /* right */
-    transform: translateX(-40vw) translateZ(0) translateY(0px) rotateY(300deg) rotateZ(20deg) rotateX(5deg) scale(1);
+    transform: translateX(-40vw) translateZ(0) translateY(0px) rotateY(290deg) scale(1);
     top: calc(50vh - 150px);
     left: calc(50vw - 300px);
     z-index: -1;
 }
 
 .back {
-    transform: translateX(0px) translateZ(-10vw) translateY(-20vh) scale(1) rotateY(180deg);
+    transform: translateX(0px) translateZ(-20vw) translateY(-15vh) scale(1) rotateY(180deg);
     top: calc(50vh - 150px);
     left: calc(50vw - 300px);
     z-index: -2;
